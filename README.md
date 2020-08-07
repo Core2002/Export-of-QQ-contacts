@@ -1,7 +1,7 @@
 # Export-of-QQ-contacts
 Export-of-QQ-contacts
 
-#How To Use
+# How To Use
 1. git clone https://github.com/Core2002/Export-of-QQ-contacts.git
 2. cd Export-of-QQ-contacts
 3. mvn clean package
