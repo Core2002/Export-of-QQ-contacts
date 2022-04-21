@@ -30,7 +30,7 @@ public class Main {
         scanner.close();
         b = BotFactoryJvm.newBot(qq, password, new BotConfiguration() {
             {
-                setDeviceInfo(context -> SystemDeviceInfoKt.loadAsDeviceInfo(new File("deviceInfo.json"), context));
+                setDeviceInfo(context -> SystemDeviceInfoKt.loadAsDeviceInfo(new File("deviceInfo.json"), getJson(), context));
             }
         });
         b.login();
@@ -53,7 +53,6 @@ public class Main {
                     )
             );
             groups.add(groupPojo);
-
             group.getMembers().forEach(member -> groupPojo.getMembers().add(new UserPojo(member.getId(), member.getNick())));
         });
 
